@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+    let p=[1,2,3,1,2,2];
+    let maxx=p.length/2;
+    let maxnum=0;
+    for(let l=0;l<p.length-1;l++){
+      let count=0;
+      for(m=l+1;m<p.length;m++){
+        if(p[l]==p[m]){
+          count++;
+        }
+      }
+      if(count>maxx){
+        maxx=count;
+  
+      }
+    }
+    console.log(maxx)
+    console.log(maxnum)
+
+
+    let arr=[1,2,3,4,5];
+    let a=arr.slice(1,4);
+    let arr2=[5,6,7,8,9];
+    let b=arr2.splice(1,3)
+    console.log("array slice and splice")
+    console.log(a)
+    console.log(b)
+
+    let arr3=[5,3,2,7,8,9]
+    let n=2;
+    for(let i=1;i<=n;i++){
+      let first=arr3[0];
+      for(j=0;j<arr3.length-1;j++){
+        arr3[j]=arr3[j+1];
+      }
+      arr3[j]=first;
+    }
+    console.log("array rotation")
+    console.log(arr3)
+
+    let x=[1,2,3,4]
+    let y=[1,2,3,4]
+    let flag=false;
+    for(let h=0;h<x.length;h++){
+      if(x[h]==y[h]){
+        flag=true;
+        continue;
+      }
+    }
+    if(flag==true)
+      console.log("the above two arrays are equal")
+
+    let z=[1,2,3,4,5]
+    let it=2;
+    var arr5;
+    for(let v=0;v<z.length;v++){
+      if(v==it)
+        arr5=z[v] 
+    }
+    console.log("remove array elements by index")
+    console.log(arr5)
+
+    </script>
+</body>
+</html>
